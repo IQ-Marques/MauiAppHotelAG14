@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#6F4E37">
+
+    <VerticalStackLayout Padding="30" Spacing="20">
+
+        <Label Text="ℹ Sobre o Sistema"
+               FontSize="28"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               TextColor="White"/>
+
+        <Frame BackgroundColor="#F5E6D3"
+               Padding="20"
+               CornerRadius="20">
+
+            <VerticalStackLayout Spacing="15">
+
+                <Label Text="Sistema: Hotel Imperial"
+                       TextColor="Black"/>
+
+                <Label Text="Desenvolvedor: Isaque Marques"
+                       TextColor="Black"/>
+
+                <Label Text="Curso: Desenvolvimento em C#"
+                       TextColor="Black"/>
+
+                <Label Text="Ano: 2026"
+                       TextColor="Black"/>
+
+                <Label Text="Aplicação desenvolvida em .NET MAUI para gerenciamento de hospedagem."
+                       TextColor="Black"/>
+
+            </VerticalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                Clicked="Voltar_Clicked"
+                BackgroundColor="#4A2C1A"
+                TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>

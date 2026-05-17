@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
+             Title="Reserva"
+             BackgroundColor="#6F4E37">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="25" Spacing="15">
+
+            <Label Text="🏨 Hotel Imperial"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   TextColor="White"/>
+
+            <Frame BackgroundColor="#F5E6D3"
+                   Padding="20"
+                   CornerRadius="20">
+
+                <VerticalStackLayout Spacing="12">
+
+                    <Label Text="Adultos" TextColor="Black"/>
+                    <Entry x:Name="txtAdultos" TextColor="Black"/>
+
+                    <Label Text="Crianças" TextColor="Black"/>
+                    <Entry x:Name="txtCriancas" TextColor="Black"/>
+
+                    <Label Text="Suíte" TextColor="Black"/>
+                    <Picker x:Name="pckSuite" TextColor="Black">
+                        <Picker.Items>
+                            <x:String>Standard</x:String>
+                            <x:String>Luxo</x:String>
+                            <x:String>Master</x:String>
+                        </Picker.Items>
+                    </Picker>
+
+                    <Label Text="Chegada" TextColor="Black"/>
+                    <DatePicker x:Name="dtChegada"/>
+
+                    <Label Text="Saída" TextColor="Black"/>
+                    <DatePicker x:Name="dtSaida"/>
+
+                    <Button Text="Reservar"
+                            Clicked="Contratar_Clicked"
+                            BackgroundColor="#4A2C1A"
+                            TextColor="White"/>
+
+                    <Button Text="Sobre"
+                            Clicked="Sobre_Clicked"
+                            BackgroundColor="#8B5E3C"
+                            TextColor="White"/>
+
+                </VerticalStackLayout>
+
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
